@@ -46,25 +46,25 @@ Preprocessing Steps:
 
 # Architecture (Textual Diagram)
 
- ┌──────────────────────────────────────────────┐
- │          Audio Stream (Multilingual)          │
- └─────────────────┬────────────────────────────┘
-                   │
-        ┌──────────▼──────────┐
-        │  Preprocessing (VAD, Noise Filter) │
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────┐
-        │ Whisper Encoder (Multilingual) │
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────┐
-        │ Streaming CTC Decoder │
-        └──────────┬──────────┘
-                   │
-        ┌──────────▼──────────┐
-        │ RealTime Text Output │
-        └──────────────────────┘
+      ┌──────────────────────────────────────────────┐
+      │          Audio Stream (Multilingual)          │
+      └─────────────────┬────────────────────────────┘
+                        │
+             ┌──────────▼──────────┐
+             │  Preprocessing (VAD, Noise Filter) │
+             └──────────┬──────────┘
+                        │
+             ┌──────────▼──────────┐
+             │ Whisper Encoder (Multilingual) │
+             └──────────┬──────────┘
+                        │
+             ┌──────────▼──────────┐
+             │ Streaming CTC Decoder │
+             └──────────┬──────────┘
+                        │
+             ┌──────────▼──────────┐
+             │ RealTime Text Output │
+             └──────────────────────┘
 
 # Results
 | Language | WER (%) | RTF  | Latency (ms) |
