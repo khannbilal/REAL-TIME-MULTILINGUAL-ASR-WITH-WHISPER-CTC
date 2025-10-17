@@ -45,6 +45,7 @@ Preprocessing Steps:
  Compared against baseline Whisper offline decoding.
 
 # Architecture (Textual Diagram)
+
  ┌──────────────────────────────────────────────┐
  │          Audio Stream (Multilingual)          │
  └─────────────────┬────────────────────────────┘
